@@ -3,6 +3,11 @@
   "repo": "zope.interface",
   "versions": [
     {
+      "commit": "197258cab160d5f45ed72d004cded8ceecc8ccff",
+      "tag": "8.3",
+      "parsed_at": "2026-11-22T03:20:51.923325+00:00"
+    },
+    {
       "commit": "c220969089921d58d24df3eb3e1588f75bd6c12a",
       "tag": "",
       "parsed_at": "2026-11-06T01:37:03.797606+00:00"
