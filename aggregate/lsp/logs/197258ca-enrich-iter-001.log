@@ -1,0 +1,31 @@
+[2026-11-22T02:31:17Z] === ENRICH ITERATION 1 START | repo=zopefoundation/zope.interface sha=197258ca ===
+[2026-11-22T02:31:17Z] [iter=1] PHASE START: enrich repo=zopefoundation/zope.interface sha=197258ca runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/197258ca-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/197258cab160d5f45ed72d004cded8ceecc8ccff.nq.gz
+[2026-11-22T02:31:25Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T02:31:32Z] [iter=1] AST store loaded triples=894854 load_secs=7 mem_mb=878 MB
+[2026-11-22T02:31:32Z] [iter=1] Step 2: Finding LSP targets mem_mb=878 MB
+[2026-11-22T02:31:35Z] [iter=1] LSP targets found call_sites=7841 imports=1113 extends=1168 implements=0 secs=3
+[2026-11-22T02:31:38Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=878 MB
+[2026-11-22T02:31:43Z] [iter=1] Position index built positions=63022 nodes_with_types=80507 secs=6 mem_mb=878 MB
+[2026-11-22T02:31:43Z] [iter=1] Step 3: Starting LSP resolution mem_mb=878 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T02:31:43Z] [iter=1] Resolving target type target_type=call_site count=7841
+[2026-11-22T02:35:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=1 resolved=1175 errors=0 current=src/zope/interface/tests/test_adapter.py
+[2026-11-22T02:39:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=2 resolved=2329 errors=0 current=src/zope/interface/tests/test_document.py
+[2026-11-22T02:40:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=4 resolved=2591 errors=0 current=src/zope/interface/tests/test_ro.py
+[2026-11-22T02:45:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=6 resolved=4233 errors=0 current=src/zope/interface/tests/__init__.py
+[2026-11-22T02:48:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.7 files_done=8 resolved=5252 errors=0 current=src/zope/interface/tests/odd.py
+[2026-11-22T02:49:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.2 files_done=11 resolved=5410 errors=0 current=benchmarks/micro.py
+[2026-11-22T02:50:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=13 resolved=5585 errors=0 current=src/zope/interface/common/tests/test_idatetime.py
+[2026-11-22T02:50:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.6 files_done=16 resolved=5795 errors=0 current=src/zope/interface/interface.py
+[2026-11-22T02:51:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=18 resolved=6047 errors=0 current=src/zope/interface/common/collections.py
+[2026-11-22T02:52:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.5 files_done=22 resolved=6278 errors=0 current=src/zope/interface/common/tests/basemapping.py
+[2026-11-22T02:53:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=27 resolved=6497 errors=0 current=src/zope/interface/tests/test_compile_flags.py
+[2026-11-22T02:54:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.8 files_done=35 resolved=6671 errors=0 current=setup.py
+[2026-11-22T02:55:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.6 files_done=49 resolved=7016 errors=0 current=.manylinux-install.sh
+[2026-11-22T02:55:56Z] [iter=1] Target type resolved target_type=call_site resolved=7017 errors=0 secs=1453 mem_mb=878 MB
+[2026-11-22T02:55:56Z] [iter=1] Resolving target type target_type=import_statement count=1113
+[2026-11-22T02:56:05Z] [iter=1] Target type resolved target_type=import_statement resolved=110 errors=0 secs=9 mem_mb=878 MB
+[2026-11-22T02:56:05Z] [iter=1] Resolving target type target_type=extends_clause count=1168
+[2026-11-22T02:56:13Z] [iter=1] Target type resolved target_type=extends_clause resolved=1167 errors=0 secs=8 mem_mb=878 MB
+[2026-11-22T03:18:54Z] [iter=1] Step 5: Writing final enrichment file triples=111926
+[2026-11-22T03:18:55Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/197258cab160d5f45ed72d004cded8ceecc8ccff.nq.gz size_kb=2293
+[2026-11-22T03:18:55Z] [iter=1] PHASE END: enrich elapsed_s=2858 elapsed_min=47.6 total_triples=111926
